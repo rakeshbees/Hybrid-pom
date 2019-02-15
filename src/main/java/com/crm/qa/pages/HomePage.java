@@ -10,7 +10,7 @@ import com.crm.qa.base.TestBase;
 
 public class HomePage extends TestBase {
 
-	@FindBy(xpath = "//td[contains(text(),'User: Naveen K')]")
+	@FindBy(xpath = "//td[contains(text(),'User: rakesh K')]")
 	@CacheLookup
 	WebElement userNameLabel;
 
@@ -31,6 +31,8 @@ public class HomePage extends TestBase {
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
+	
+	//Actions performed
 	
 	public String verifyHomePageTitle(){
 		return driver.getTitle();
