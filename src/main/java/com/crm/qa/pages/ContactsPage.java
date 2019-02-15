@@ -32,7 +32,7 @@ public class ContactsPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
+	// Actions perfromed
 	public boolean verifyContactsLabel(){
 		return contactsLabel.isDisplayed();
 	}
